@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+	<div class="content">
+		<div id="header">
+			<span><%= title%></span>
+		</div>
+
+		<div id="music-list">
+			<input type="range" min="0" max="100" value="50" id="volume">
+			<ul>
+				<% music.forEach(function(name, i) { %>
+					<li music-name="<%=name%>"><%=i+1%>, <%=name%></li>
+				<% }) %>
+			</ul>
+		</div>
+		<div id="music-show">
+			
+		</div>
+	</div>	
+	<script type="text/javascript" src="/javascripts/index.js"></script>
+</body>
+</html>

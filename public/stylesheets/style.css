@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	font-family: "微软雅黑";
+}
+.content {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#header {
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	position: relative;
+	background: #EEE9BF;
+}
+#header span:before{
+    content:"";
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+#header span {
+	display: inline-block;	
+	vertical-align:middle;
+	height: 100%;
+	font-size: 20px;
+	
+}
+#music-list {
+	width: 20%;
+	height: 90%;
+	padding-top: 1%;
+	background:	#CD8500;
+	float: left;
+}
+#music-list ul {
+	width: 100%;
+}
+#music-list ul li {
+	width: 100%;
+	padding: 2% 0 2% 3%;
+	margin-bottom: 2%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-weight: bold;
+	cursor: pointer;
+	color: #9AFF9A;
+}
+#music-list ul li:hover {
+	color: #fff;
+}
+#music-list ul li.selected {
+	color: #fff;
+	background: #AB82FF;
+}
+
+#music-show {
+	width: 80%;
+	float: left;
+	height: 90%;
+	background: #000;
+	overflow: hidden;
+}
